@@ -45,3 +45,11 @@ The main change goes in `mapper.py`. Because `mapper.py` reads raw lines, splits
 The main change goes in `reducer.py`, since only the reducer receives all counts for each word and can rank the totals across the dataset (and with `-numReduceTasks 1`, one reducer produces the final top 3).
 
 ![Exercise 3 Output](ex3.png)
+
+### Top 3 Most Frequent Words
+
+**Raw Output (`part-00000`):**
+```text
+the	74369
+and	42768
+of	34588
